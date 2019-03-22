@@ -1,0 +1,30 @@
+Ext.regModel("app.model.AssignmentModel",{
+    fields:[{
+        name:'id',
+        type:'int'
+    },{
+        name:'courseId',
+        type:'int'
+    },{
+        name:'name',
+        type:'string'
+    },{
+        name:'assignType',
+        type:'string'
+    },{
+        name:'publishDate',
+        type:'date'
+    },{
+        name:'dueDate',
+        type:'date'
+    },{
+        name:'content',
+        type:'string'
+    },{
+        name:'point',
+        type:'int'
+    },{
+        name:'version',
+        type:'int'
+    }]
+});

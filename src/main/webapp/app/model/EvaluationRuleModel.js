@@ -1,0 +1,18 @@
+Ext.regModel("app.model.EvaluationRuleModel",{
+    fields:[{
+        name:'id',
+        type:'int'
+    },{
+        name:'aValue',
+        type:'auto'
+    },{
+        name:'bValue',
+        type:'auto'
+    },{
+        name:'type',
+        type:'string'
+    },{
+        name:'course',
+        type:'auto'
+    }]
+});

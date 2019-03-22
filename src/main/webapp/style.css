@@ -1,0 +1,19 @@
+.app-header{
+    width:100vw;
+    background-color: #1b4769;
+    color:white;
+    padding:10px 10px 10px 10px;
+    font-size:20px;
+}
+.app-welcomUser{
+    font-size:10px
+}
+.app-container{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+}
+.app-content{
+    width:100vw;
+}

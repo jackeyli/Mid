@@ -1,0 +1,15 @@
+Ext.regModel("app.model.ScholarshipAssnModel",{
+    fields:[{
+        name:'id',
+        type:'int'
+    },{
+        name:'studentId',
+        type:'int'
+    },{
+        name:'studentName',
+        type:'string'
+    },{
+        name:'scholarShipName',
+        type:'string'
+    },]
+});

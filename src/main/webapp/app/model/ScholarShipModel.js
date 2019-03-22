@@ -1,0 +1,23 @@
+Ext.regModel("app.model.ScholarShipModel",{
+    fields:[{
+        name:'id',
+        type:'int'
+    },{
+        name:'fixedRate',
+        type:'double'
+    },{
+        name:'discount',
+        type:'double'
+    },{
+        name:'type',
+        type:'string'
+    },{
+        name:'name',
+        type:'string'
+    },
+        {
+            name:'discountType',
+            type:'string'
+        }
+    ]
+});

@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+  <display-name>midTerm</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/config/applicationContext.xml</param-value>
+  </context-param>
+<filter>
+      <filter-name>logInFulter</filter-name>
+      <filter-class>li.yifei4.filter.LogInFilter</filter-class>
+</filter>
+  <filter-mapping>
+   <filter-name>logInFulter</filter-name>
+   <url-pattern>/request/*</url-pattern>
+ </filter-mapping>
+  <servlet>
+    <servlet-name>initServlet</servlet-name>
+    <servlet-class>
+      li.yifei4.servlets.InitServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>spring-mvc</servlet-name>
+    <servlet-class>
+      org.springframework.web.servlet.DispatcherServlet
+    </servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/config/applicationContext.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>spring-mvc</servlet-name>
+    <url-pattern>/request/*</url-pattern>
+  </servlet-mapping>
+</web-app>
+
